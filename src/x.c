@@ -437,7 +437,7 @@ void x_draw_decoration(Con *con) {
          * (left, bottom and right part). We don’t just fill the whole
          * rectangle because some childs are not freely resizable and we want
          * their background color to "shine through". */
-        xcb_change_gc(conn, con->pm_gc, XCB_GC_FOREGROUND, (uint32_t[]){p->color->background});
+        xcb_change_gc(conn, con->pm_gc, XCB_GC_FOREGROUND, (uint32_t[]){p->color->border});
         if (!(borders_to_hide & ADJ_LEFT_SCREEN_EDGE)) {
             xcb_rectangle_t leftline = {0, 0, br.x, r->height};
             xcb_poly_fill_rectangle(conn, con->pixmap, con->pm_gc, 1, &leftline);

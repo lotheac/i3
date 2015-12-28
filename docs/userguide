@@ -873,10 +873,6 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000
 client.background       #ffffff
 ---------------------------------------------------------
 
-Note that for the window decorations, the color around the child window is the
-background color, and the border color is only the two thin lines at the top of
-the window.
-
 The indicator color is used for indicating where a new window will be opened.
 For horizontal split containers, the right border will be painted in indicator
 color, for vertical split containers, the bottom border. This only applies to
